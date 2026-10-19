@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Blood Moon ML Season 2 | Tournament Registration</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Blood Moon home">
+      <span class="brand-mark">☾</span>
+      <span><b>BLOOD <em>MOON</em></b><small>MLBB TOURNAMENT • SEASON 2</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a><a href="#rules">Rules</a><a href="#register">Register Team</a>
+      <button class="nav-admin" id="adminOpen">Admin</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> REGISTRATION PORTAL • SEASON 2</div>
+        <h1>ENTER THE<br><span>BLOOD MOON.</span></h1>
+        <p class="hero-copy">One arena. One champion. Prove your team's skill in the ultimate Mobile Legends: Bang Bang showdown.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#register">Register Your Team <span>↗</span></a>
+          <a class="btn btn-outline" href="#rules">Read Rulebook</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>5 + 2</strong><span>MAIN + SUBS</span></div>
+          <div><strong>BO3 / BO5</strong><span>MATCH FORMATS</span></div>
+          <div><strong>FAIR PLAY</strong><span>RESPECT THE GAME</span></div>
+        </div>
+      </div>
+      <div class="moon-art" aria-hidden="true">
+        <div class="moon-halo"></div><div class="moon"></div>
+        <div class="slash slash-one"></div><div class="slash slash-two"></div>
+        <div class="art-label">SEASON <b>02</b></div>
+        <div class="art-bottom">NO FEAR <span>•</span> NO LIMITS</div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-kicker">01 / THE TOURNAMENT</div>
+      <div class="intro-grid">
+        <h2>THIS IS YOUR<br><span>TIME TO RISE.</span></h2>
+        <div><p>Blood Moon ML Season 2 brings teams together for competitive Mobile Legends action. Build your roster, follow the rules, and compete with discipline and respect.</p>
+        <div class="notice"><b>⚠ IMPORTANT</b><span>Submitting this form is a registration request. Your team is confirmed only after the tournament management approves it.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section rules-section" id="rules">
+      <div class="section-kicker">02 / QUICK RULES</div>
+      <div class="section-heading"><h2>KNOW THE <span>RULES.</span></h2><p>Compete fairly. Stay disciplined. Respect every decision.</p></div>
+      <div class="rule-grid">
+        <article class="rule-card"><span class="rule-num">01</span><div class="rule-icon">👥</div><h3>TEAM ROSTER</h3><p>Maximum 7 registered players per team: 5 Main Players and 2 Substitute Players.</p></article>
+        <article class="rule-card"><span class="rule-num">02</span><div class="rule-icon">⚔️</div><h3>BO3 MATCH</h3><p>The first team to win 2 games wins the match. A third game is played only if needed.</p></article>
+        <article class="rule-card"><span class="rule-num">03</span><div class="rule-icon">🏆</div><h3>BO5 MATCH</h3><p>The first team to win 3 games wins the match. Stop once a team secures 3 wins.</p></article>
+        <article class="rule-card"><span class="rule-num">04</span><div class="rule-icon">⚖️</div><h3>REFEREE AUTHORITY</h3><p>Official referee decisions are final, subject only to any review process expressly permitted by tournament rules.</p></article>
+        <article class="rule-card"><span class="rule-num">05</span><div class="rule-icon">🤝</div><h3>NO TOXICITY</h3><p>No harassment, threats, personal attacks, spam, or disruptive arguments in official channels.</p></article>
+        <article class="rule-card"><span class="rule-num">06</span><div class="rule-icon">🛡️</div><h3>FAIR PLAY</h3><p>Cheating, match-fixing, impersonation, and unauthorized players can lead to penalties or disqualification.</p></article>
+      </div>
+      <p class="rules-note">The complete official rulebook and match-specific instructions issued by tournament management apply to all teams.</p>
+    </section>
+
+    <section class="section register-section" id="register">
+      <div class="section-kicker">03 / TEAM ENTRY</div>
+      <div class="register-layout">
+        <div class="register-intro"><h2>CLAIM YOUR<br><span>PLACE.</span></h2><p>Fill out the details carefully. Your captain's contact information must be valid so the organizers can reach your team.</p><div class="roster-badge"><span>✓</span><div><b>7 PLAYERS MAXIMUM</b><small>5 MAIN • 2 SUBSTITUTE</small></div></div><div class="privacy-note">🔒 Your registration details are shared with tournament management for event administration.</div></div>
+        <form id="registrationForm" class="registration-form">
+          <div class="form-title"><div><span>TEAM REGISTRATION</span><h3>Enter your squad</h3></div><span class="required">* Required fields</span></div>
+          <div class="form-grid">
+            <label class="full">Team Name *<input name="teamName" required maxlength="60" placeholder="Enter your official team name"></label>
+            <label>Captain Name *<input name="captainName" required maxlength="60" placeholder="Captain's full name"></label>
+            <label>Contact Number *<input name="contact" required type="tel" maxlength="25" placeholder="e.g. 01XXXXXXXXX"></label>
+            <label class="full">Facebook Profile / Contact Link <input name="facebook" type="url" maxlength="250" placeholder="https://facebook.com/..."></label>
+            <label class="full">Team Logo URL (optional)<input name="logoUrl" type="url" maxlength="500" placeholder="Paste a public image URL, if available"></label>
+          </div>
+          <div class="roster-heading"><div><h4>Player roster</h4><p>Enter 5 main players. Substitute slots are optional.</p></div><span>MAX 7</span></div>
+          <div id="playersContainer"></div>
+          <label class="check-row"><input type="checkbox" name="acceptRules" required><span>I confirm that the information is accurate and my team agrees to follow the Blood Moon ML Season 2 rules. *</span></label>
+          <button class="btn btn-primary submit-btn" type="submit">Submit Registration <span>↗</span></button>
+          <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-moon">☾</div><div><span>THE ARENA IS WAITING</span><h2>PLAY FAIR. FIGHT HARD.</h2><p>Respect the game. Respect the teams. Respect the rules.</p></div><a class="btn btn-primary" href="#register">Register Now ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">☾</span><span><b>BLOOD <em>MOON</em></b><small>MLBB TOURNAMENT • SEASON 2</small></span></a><p>© <span id="year"></span> Blood Moon Tournament Management. All rights reserved.</p><a href="#rules">Tournament Rules ↑</a></footer>
+
+  <div class="modal-backdrop" id="adminModal" hidden>
+    <section class="admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <button class="modal-close" id="adminClose" aria-label="Close">×</button>
+      <div id="adminLoginView">
+        <span class="section-kicker">MANAGEMENT ACCESS</span><h2 id="adminTitle">ADMIN <span>LOGIN</span></h2>
+        <p class="muted">Sign in to review team registrations and update their status.</p>
+        <form id="adminLoginForm"><label>Admin username<input name="username" required autocomplete="username" placeholder="Admin username"></label><label>Password<input name="password" required type="password" autocomplete="current-password" placeholder="Admin password"></label><button class="btn btn-primary full-btn" type="submit">Sign In</button><div id="loginMessage" class="form-message"></div></form>
+      </div>
+      <div id="adminDashboard" hidden>
+        <div class="admin-head"><div><span class="section-kicker">TOURNAMENT CONTROL</span><h2>REGISTRATIONS</h2></div><button class="btn btn-outline" id="adminLogout">Log out</button></div>
+        <div class="admin-summary" id="adminSummary"></div>
+        <div class="admin-tools"><input id="adminSearch" placeholder="Search team or captain..."><select id="statusFilter"><option value="">All statuses</option><option>Pending</option><option>Approved</option><option>Rejected</option></select><button class="btn btn-outline" id="exportCsv">Export CSV</button></div>
+        <div id="registrationsList" class="registrations-list"></div>
+      </div>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
